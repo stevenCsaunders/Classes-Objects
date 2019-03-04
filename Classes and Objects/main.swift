@@ -8,8 +8,16 @@
 
 import Foundation
 
-let myCar = Car(customerColorChoice: "Gold", customerNumberOfSeatsChosen: 2, customerTypeOfCarChoice: .Coupe)
+let myCar = Car()
+let customerCar = Car(customerColorChoice: "Flame Red", customerNumberOfSeatsChosen: 2, customerTypeOfCarChoice: .Convertible)
+let mySelfDrivingCar = SelfDrivingCar()
 
 myCar.drive()
+
+mySelfDrivingCar.drive()
+print(mySelfDrivingCar.color)
+
+
+
 
 

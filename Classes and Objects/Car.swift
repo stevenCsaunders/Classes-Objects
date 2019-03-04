@@ -19,25 +19,27 @@ enum CarType {
 
 class Car {
     
-    var color = "White"
+    var color = "Midnight Black"
     var numberOfSeats = 5
     var typeOfCar : CarType = .Coupe
     
-    init() {
-
+    init () {
+        
     }
 
     convenience init (customerColorChoice : String, customerNumberOfSeatsChosen : Int, customerTypeOfCarChoice : CarType) {
+        
         self.init()
         color = customerColorChoice
         numberOfSeats = customerNumberOfSeatsChosen
         typeOfCar = customerTypeOfCarChoice
+        
     }
     
     func drive () {
     
         print("Car is moving")
-        
+    
     }
     
 }
